@@ -6,11 +6,11 @@ h1 {
   font-weight: bold;
 }
 .Profile {
-    max-height: 300px;
+
+}
+
+#travelcarousel {
     margin-right: auto;
     margin-left: auto;
-    display: block;
-}
-h2 {
-    text-align: center;
+    margin-bottom: 50px;
 }

@@ -12,14 +12,96 @@
 </head>
 
 <body>
-    <h1>Miranda Montez</h1>
-    <img src="images/monte141.jpg" alt="Miranda Photo" class="Profile">
-    <h2>Life Now</h2>
-    <p>Graduate Student at the University of Washington. Studying Library and Information Sciences.</p>
-    <p>Receptionist at Dr. Horshinski's Chiropractic Office.</p>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <div class="container">
+        <h1>Miranda Montez</h1>
+        <div class="row">
+            <div class="col-sm-12 col-md-4"><img src="images/monte141.jpg" alt="Miranda Photo" class="Profile img-fluid"></div>
+            <div class="col-sm-12 col-md-8"><h2>About Me</h2>
+            <p>I am a Graduate Student at the University of Washington. I am studying Library and Information Sciences, one
+                day hoping to work in an academic library. I am originally from Minnesota but I live in New York City. I
+                love travel, and studied abroad in Worcester, England for a year in my undergrad. I am excited to be studying
+                abroad again this summer, spending a month in the Netherlands. I am obsessed with giant pandas and have visited
+                multiple cities and countries to see them in person.
+            </p>
+            <h2>Contact Me</h2>
+            <p>Email:
+                <a href="mailto:monte141@uw.edu">monte141@uw.edu</a>
+            </p>
+            <p>Website:
+                <a href="https://monte141.github.io">monte141.github.io</a>
+            </p>
+            <p>Goodreads: Click
+                <a href="https://www.goodreads.com/user/show/16087789-miranda">here</a> to find me on Goodreads!</p>
+            <p>Resumé:
+                <a href="images/Miranda_Montez_Resume.pdf" target="_blank">Click here for a PDF version.</a>
+            </p>
+        </div>
+        </div>
+        <h2 class="text-center">Recent Travels</h2>
+        <div id="travelcarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#travelcarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#travelcarousel" data-slide-to="1"></li>
+                <li data-target="#travelcarousel" data-slide-to="2"></li>
+                <li data-target="#travelcarousel" data-slide-to="3"></li>
+                <li data-target="#travelcarousel" data-slide-to="4"></li>
+            </ol>
+            <div class="row">
+                <div class="carousel-inner col-sm-12 col-lg-6 offset-lg-3">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="images/Waitress2018.jpg" alt="Waitress on Broadway 2018">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>New York City 2018</h5>
+                            <p>Waitress on Broadway</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/PandasWashingtonDC2018.JPG" alt="Washington D.C. 2018">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Washington D.C. 2018</h5>
+                            <p>Meeting pandas at the Capital</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/Seattle2016.JPG" alt="Seattle 2016">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Seattle 2016</h5>
+                            <p>Visiting the pier (Space Needle in the background!)</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/DolphinMadrid2016.jpg" alt="Madrid 2016">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Madrid 2016</h5>
+                            <p>Making dolphin friends!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/LochNess2013.jpg" alt="Loch Ness 2013">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Loch Ness, Scotland 2013</h5>
+                            <p>On the hunt for Nessie</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#travelcarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#travelcarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
