@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Which Character From Freddy the Pig are You?
+  </title>
+  <link rel="stylesheet" type="text/css" href="quiz_styles.css">
+</head>
+
+<body>
+  <h1 class="pizzagarbles">Which Character From Freddy the Pig are You?
+  </h1>
+  <h2 class="hamburgerfoes"> Jock? Jack? Hank the old white horse? Take this quiz to see which of Mr. Bean's talking
+    animals you are!
+  </h2>
+  <div id="quizbox">
+    <p> <span class="question"> Question 1: On a given day, what time do you wake up in the morning? </span> <br />
+      <input class="answer" type="radio" name="question1" onclick="clickanswer(0, 'cow')">When the rooster crows.
+      </input> <br />
+      <input class="answer" type="radio" name="question1" onclick="clickanswer(0, 'pig')">Morning? I always mean to get
+      up in the morning, but it never quite happens. </input> <br />
+      <input class="answer" type="radio" name="question1" onclick="clickanswer(0, 'rooster')">The crack of dawn.
+      </input> <br />
+      <input class="answer" type="radio" name="question1" onclick="clickanswer(0, 'cat')">Whenever I damn well please.
+      </input> <br />
+    </p>
+    <p> <span class="question"> Question 2: Which of these would you consider to be your best trait? </span> <br />
+      <input class="answer" type="radio" name="question2" onclick="clickanswer(1, 'rooster')">My dashing eloquence.
+      </input> <br />
+      <input class="answer" type="radio" name="question2" onclick="clickanswer(1, 'pig')">My wordsmith-ery. </input>
+      <br />
+      <input class="answer" type="radio" name="question2" onclick="clickanswer(1, 'cow')">My common sense. </input> <br />
+      <input class="answer" type="radio" name="question2" onclick="clickanswer(1, 'cat')">My quick reflexes, no one can
+      get past me! </input> <br />
+    </p>
+    <p> <span class="question"> Question 3: Describe your perfect adventure: </span> <br />
+      <input class="answer" type="radio" name="question3" onclick="clickanswer(2, 'pig')">A romp around London, like
+      the great Sherlock Holmes. </input> <br />
+      <input class="answer" type="radio" name="question3" onclick="clickanswer(2, 'rooster')">Galavanting through
+      Spain, just like the beloved Don Quixote. </input> <br />
+      <input class="answer" type="radio" name="question3" onclick="clickanswer(2, 'cat')">On a secret mission, spying
+      for the goverment. </input> <br />
+      <input class="answer" type="radio" name="question3" onclick="clickanswer(2, 'cow')">Down to the pond, that's
+      enough adventure for me... </input> <br />
+    </p>
+    <p> <span class="question"> Question 4: What is the best part of your day? </span> <br />
+      <input class="answer" type="radio" name="question4" onclick="clickanswer(3, 'cow')">Just seeing my friends every
+      day. </input> <br />
+      <input class="answer" type="radio" name="question4" onclick="clickanswer(3, 'cat')">When the sun hits my nap
+      spot. </input> <br />
+      <input class="answer" type="radio" name="question4" onclick="clickanswer(3, 'pig')">Thinking in my armchair.
+      </input> <br />
+      <input class="answer" type="radio" name="question4" onclick="clickanswer(3, 'rooster')">Imparting my wisdom on
+      others. </input> <br />
+    </p>
+    <p> <span class="question"> Question 5: How do you deal with your enemies? </span> <br />
+      <input class="answer" type="radio" name="question5" onclick="clickanswer(4, 'cat')">Lick 'em in a good fight.
+      </input> <br />
+      <input class="answer" type="radio" name="question5" onclick="clickanswer(4, 'pig')">Use my wit to trick them.
+      </input> <br />
+      <input class="answer" type="radio" name="question5" onclick="clickanswer(4, 'rooster')">Give them the old
+      what-for! (or just try to convince them I'm right). </input> <br />
+      <input class="answer" type="radio" name="question5" onclick="clickanswer(4, 'cow')">Oh dear, I don't think I have
+      any enemies. </input> <br />
+    </p>
+    <p> <span class="question"> Question 6: Where do you prefer to spend your time? </span> <br />
+      <input class="answer" type="radio" name="question6" onclick="clickanswer(5, 'pig')">In my study, deep in thought.
+      </input> <br />
+      <input class="answer" type="radio" name="question6" onclick="clickanswer(5, 'rooter')">Managing my household.
+      </input> <br />
+      <input class="answer" type="radio" name="question6" onclick="clickanswer(5, 'cow')">Hanging out with my family.
+      </input> <br />
+      <input class="answer" type="radio" name="question6" onclick="clickanswer(5, 'cat')">Lazing in the sun. </input>
+      <br />
+    </p>
+    <p> <span class="question"> Question 7: What is your favorite color? </span> <br />
+      <input class="answer" type="radio" name="question7" onclick="clickanswer(6, 'cow')">Bright green, like fresh
+      grass. </input> <br />
+      <input class="answer" type="radio" name="question7" onclick="clickanswer(6, 'cat')">Black. Simple. </input> <br />
+      <input class="answer" type="radio" name="question7" onclick="clickanswer(6, 'pig')">Pink, the color of happiness.
+      </input> <br />
+      <input class="answer" type="radio" name="question7" onclick="clickanswer(6, 'rooster')">Red! </input> <br />
+    </p>
+    <p> <span class="question"> Question 8: Choose a snack: </span> <br />
+      <input class="answer" type="radio" name="question8" onclick="clickanswer(7, 'rooster')">Cornbread. </input> <br />
+      <input class="answer" type="radio" name="question8" onclick="clickanswer(7, 'cow')">A light salad. </input> <br />
+      <input class="answer" type="radio" name="question8" onclick="clickanswer(7, 'cat')">Tuna sandwich. </input> <br />
+      <input class="answer" type="radio" name="question8" onclick="clickanswer(7, 'pig')"> Biscuits and some gravy.
+      Might as well also have some lemonade. And cookies! With cake as dessert. </input> <br />
+    </p>
+    <p> <span class="question"> Question 9: Which is the best Freddy the Pig book? </span> <br />
+      <input class="answer" type="radio" name="question9" onclick="clickanswer(8, 'cat')">Freddy and The Bean Home News
+      </input> <br />
+      <input class="answer" type="radio" name="question9" onclick="clickanswer(8, 'rooster')">Freddy Goes to Florida
+      </input> <br />
+      <input class="answer" type="radio" name="question9" onclick="clickanswer(8, 'pig')">Freddy the Detective </input>
+      <br />
+      <input class="answer" type="radio" name="question9" onclick="clickanswer(8, 'cow')">Freddy the Politician </input>
+      <br />
+    </p>
+  </div>
+
+  <input id="resultsButton" type="submit" value="See My Results!" onclick="tally()" />
+
+  <img src="freddybackground.jpg" class="freddypic" />
+
+  <div id="resultbox" class="hidden">
+    <img id="resultimg" src="" />
+    <h3 id="resultanswer">
+    </h3>
+    <p id="yayresult">
+    </p>
+  </div>
+
+  <script type="application/javascript">
+
+    var Answers = [];
+    function clickanswer(QuestionNumber, Animal) {
+      Answers[QuestionNumber] = Animal;
+    }
+    function tally() {
+      var cow = 0
+      var pig = 0
+      var rooster = 0
+      var cat = 0
+      for (var i = 0; i < Answers.length; i = i + 1) {
+        if (Answers[i] === "cow") {
+          cow = cow + 1;
+        }
+        if (Answers[i] === "pig") {
+          pig = pig + 1;
+        }
+        if (Answers[i] === "rooster") {
+          rooster = rooster + 1;
+        }
+        if (Answers[i] === "cat") {
+          cat = cat + 1;
+        }
+      }
+
+      if (cow >= pig && cow >= rooster && cow >= cat) {
+        displayResult("Mrs. Wiggins!", "You have a healthy amount of common sense and a great sense of humor! All the animals in the barnyard would gladly follow you to the edge of the Big Woods under your leadership of the F.A.R.!", "wiggins_answer.jpg")
+      }
+      else if (rooster >= pig && rooster >= cow && rooster >= cat) {
+        displayResult("Charles the Rooster", "Your charisma and ability to pull great orations from your tailfeathers put you at the top of the pecking order!", "charles_answer.jpg")
+      }
+      else if (cat >= cow && cat >= pig && cat >= rooster) {
+        displayResult("Jinx", "Sly and witty; though you may not show it at first, you are an immensely supportive friend. Your bravery ensures that you will stay with them no matter what!", "jinx_answer.png")
+      }
+      else if (pig >= cow && pig >= rooster && pig >= cat) {
+        displayResult("FREDDY the PIG", "Pig of all trades, you're as smart as a whip! When friends come for help, you're always equipped; you've solved every mys'try brought to your pen, and each day you wake up to do it again!", "freddy_answer.jpg")
+      }
+    }
+
+    function displayResult(animalName, animalDescription, imagePath) {
+      var answerHeader = document.querySelector('#resultanswer')
+      var answerDescription = document.querySelector('#yayresult')
+      var answerImg = document.querySelector("#resultimg")
+
+      answerHeader.textContent = "You got: " + animalName;
+      answerDescription.textContent = animalDescription;
+      answerImg.src = imagePath;
+
+      document.querySelector('#resultbox').classList.remove('hidden')
+    }
+  </script>
+
+</body>
+
+
+</html>
