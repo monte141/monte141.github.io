@@ -2,3 +2,8 @@ body {
     font-family: serif;
 }
 
+#weekFrame {
+    display: block;
+    border: none;
+    width: 100%;
+}

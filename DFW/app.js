@@ -28,3 +28,9 @@ if (location.hash) {
       $('a[data-toggle=\'tab\']').first().attr('href');
     $('a[href=\'' + anchor + '\']').tab('show');
   });
+
+  function switchWeek(week) {
+    var frame = document.querySelector('#weekFrame');
+    frame.src = week + '.html';
+    frame.height = frame.scrollHeight;
+  }
